@@ -1,0 +1,63 @@
+{
+	"hostname": "sciqual.1blankspace.com", 
+	"logon": "systemadmin@sciqual", 
+	"port": "443",
+	"password": "*****", 
+	"email": "support@alt-designit.com.au",
+	"testing": "false",
+	"local": "false",
+	"emsCategory": "3",
+	"anzsicCategory": "3",
+	"seClientClass": "13456",
+	"standardCategory": "1",
+	"automations":
+	[
+		{
+			"id": "8",
+			"name": "Audits where Certificate Expires in 30 days",
+			"functionName": "auditsWhereCertificateExpires",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "00"
+			}, 
+			"localRun": "false" 
+		},
+		{
+			"id": "3",
+			"name": "New Auditor Notes",
+			"functionName": "newAuditorNotes",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "05"
+			},
+			"localRun": "false" 
+		},
+		{
+			"name": "Notes added by Operations",
+			"functionName": "newOperationsNotes",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "10"
+			},
+			"localRun": "false" 
+		},
+		{
+			"name": "Update Client Class",
+			"functionName": "updateClientClass",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "15"
+			},
+			"localRun": "true" 
+		}
+
+	]
+}

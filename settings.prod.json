@@ -1,0 +1,22 @@
+{
+	"hostname": "sciqual.1blankspace.com", 
+	"logon": "systemadmin@sciqual", 
+	"password": "******", 
+	"email": "support@alt-designit.com.au",
+	"testing": "true",
+	"local": "false",
+	"automations":
+	[
+		{
+			"id": "8",
+			"name": "Audits where Certificate Expires in 30 days",
+			"functionName": "auditsWhereCertificateExpires",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "03",
+				"minute": "15"
+			} 
+		}
+	]
+}

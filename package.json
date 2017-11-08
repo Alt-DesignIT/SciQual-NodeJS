@@ -1,0 +1,28 @@
+{
+    "name": "sqiautomation",
+    "version": "0.2.12",
+    "licence": 
+    [
+        {
+            "type": "MIT", "url": "https://github.com/caolan/async/raw/master/LICENSE"
+        }
+    ],
+    "description": "node library for SQI Automations",
+    "preferGlobal": "true",
+    "main": "app.js",
+    "bin": { "mydigitalstructure": "mydigitalstructure.js" },
+    "author": "Cassandra Buono",
+    "keywords": ["SciQual Automation"],
+    "repository" :
+    {
+        "type": "git",
+        "url": "https://github.com/ibcom/sciqual-nodejs.git"
+    },
+    "dependencies": 
+    {
+        "node-schedule": "0.2.9",
+        "cron-parser": "0.7.0",
+        "long-timeout": "0.0.2"
+    },
+    "engines": { "node": "*" }
+}

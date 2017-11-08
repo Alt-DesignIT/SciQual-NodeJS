@@ -1,0 +1,22 @@
+{
+	"hostname": "sciqual.lab.ibcom.biz", 
+	"logon": "admin2@sciqual", 
+	"password": "*****", 
+	"email": "support@alt-designit.com.au",
+	"testing": "true",
+	"local": "false",
+	"automations":
+	[
+		{
+			"id": "7",
+			"name": "LAB!!!! Audits where Certificate Expires in 30 days",
+			"functionName": "auditsWhereCertificateExpires",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "02",
+				"minute": "40"
+			} 
+		}
+	]
+}
