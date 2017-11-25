@@ -2,12 +2,17 @@
 	"hostname": "sciqual.lab.ibcom.biz", 
 	"logon": "admin2@sciqual", 
 	"password": "*****", 
-	"email": "support@alt-designit.com.au",
+	"email": "cassandra.buono@alt-designit.com.au",
 	"testing": "true",
 	"local": "false",
+	"emsCategory": "35",
+	"anzsicCategory": "26",
+	"seClientClass": "2160",
+	"standardCategory": "24",
 	"automations":
 	[
 		{
+			"automationID": "1",
 			"id": "7",
 			"name": "LAB!!!! Audits where Certificate Expires in 30 days",
 			"functionName": "auditsWhereCertificateExpires",
@@ -17,6 +22,42 @@
 				"hour": "02",
 				"minute": "40"
 			} 
-		}
-	]
+		},
+		{
+			"automationID": "2",
+			"id": "63",
+			"name": "New Auditor Notes",
+			"functionName": "newAuditorNotes",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "05"
+			},
+			"localRun": "false" 
+		},
+		{
+			"automationID": "3",
+			"name": "Notes added by Operations",
+			"functionName": "newOperationsNotes",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "10"
+			},
+			"localRun": "false" 
+		},
+		{
+			"automationID": "4",
+			"name": "Update Client Class",
+			"functionName": "updateClientClass",
+			"schedule":
+			{
+				"dayOfWeekRange": {"start": "0", "end": "6"},
+				"hour": "20",
+				"minute": "15"
+			},
+			"localRun": "true" 
+		}	]
 }
