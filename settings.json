@@ -13,6 +13,7 @@
 	"automations":
 	[
 		{
+			"automationID": "1",
 			"id": "8",
 			"name": "Audits where Certificate Expires in 30 days",
 			"functionName": "auditsWhereCertificateExpires",
@@ -25,6 +26,7 @@
 			"localRun": "false" 
 		},
 		{
+			"automationID": "2",
 			"id": "3",
 			"name": "New Auditor Notes",
 			"functionName": "newAuditorNotes",
@@ -37,6 +39,7 @@
 			"localRun": "false" 
 		},
 		{
+			"automationID": "3",
 			"name": "Notes added by Operations",
 			"functionName": "newOperationsNotes",
 			"schedule":
@@ -48,6 +51,7 @@
 			"localRun": "false" 
 		},
 		{
+			"automationID": "4",
 			"name": "Update Client Class",
 			"functionName": "updateClientClass",
 			"schedule":
